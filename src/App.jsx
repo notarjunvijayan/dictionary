@@ -24,7 +24,6 @@ function App() {
     data = await api.json()
     setphon(data[0].phonetic)
     setDef(data[0].meanings[0].definitions[0].definition)
-    console.log(data)
   }
   function search(text){
     setWord(val)
