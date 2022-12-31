@@ -1,0 +1,9 @@
+img{
+    width:100vw;
+}
+
+@media (min-width:900px) {
+    img{
+        width:30vw;
+    }
+}

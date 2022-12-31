@@ -1,6 +1,7 @@
 import {useState } from "react";
-import Image from "./image";
-import Dict from "./Dict";
+import Image from "./components/image";
+import Dict from "./components/Dict";
+import './styles/main.css'
 
 function App() {
   // Variable Declaration
@@ -34,8 +35,10 @@ function App() {
     <h1>Dictionary</h1>
     <input type='text' value={val} onChange={textchange}/>
     <button onClick={search}>Click Me</button>
-    <Image id = {word} />
-    <Dict  word = {word} phonetic = {dictphonetic} def = {definition}/>
+    <div className="container">
+      <Dict  word = {word} phonetic = {dictphonetic} def = {definition}/>
+      <Image id = {word} />
+    </div>
     </>
   );
 }

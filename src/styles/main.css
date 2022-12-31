@@ -1,0 +1,14 @@
+body{
+    margin: 0%;
+}
+.container{
+    display: flex-col;
+}
+@media (min-width:900px) {
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+}

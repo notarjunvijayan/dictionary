@@ -1,0 +1,12 @@
+.dictdata{
+    width:94vw;
+    height: 30vh;
+    padding: 5vh 3vw 5vh 3vw;
+}
+@media (min-width:900px) {
+    .dictdata{
+        width:50vw;
+        padding: 0 3vw;
+    }
+}
+
