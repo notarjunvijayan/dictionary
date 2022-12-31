@@ -1,9 +1,10 @@
 img{
-    width:100vw;
+    width:90vw;
+    margin:5vh 5vw;
 }
-
 @media (min-width:900px) {
     img{
         width:30vw;
+        z-index:0;
     }
 }

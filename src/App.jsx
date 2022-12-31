@@ -1,6 +1,8 @@
 import {useState } from "react";
+import Nav from "./components/Nav";
 import Image from "./components/image";
 import Dict from "./components/Dict";
+
 import './styles/main.css'
 
 function App() {
@@ -32,12 +34,12 @@ function App() {
   
   return (
     <>
-    <h1>Dictionary</h1>
+    <Nav />
     <input type='text' value={val} onChange={textchange}/>
     <button onClick={search}>Click Me</button>
     <div className="container">
-      <Dict  word = {word} phonetic = {dictphonetic} def = {definition}/>
       <Image id = {word} />
+      <Dict  word = {word} phonetic = {dictphonetic} def = {definition}/>
     </div>
     </>
   );

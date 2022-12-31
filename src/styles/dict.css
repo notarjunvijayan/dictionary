@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+:root{
+    --dark: #333;
+}
+
 .dictdata{
     width:94vw;
     height: 30vh;
     padding: 5vh 3vw 5vh 3vw;
+    color: var(--dark);
+}
+h2{
+    font-family: 'Arial',sans-serif;
+    font-size: 4rem;
+    margin:0;
+}
+p{
+    max-width: 30rem;
+    font-family: 'Incosolata',monospace;
+}
+small{
+    font-size:medium;
 }
 @media (min-width:900px) {
     .dictdata{

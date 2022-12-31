@@ -5,7 +5,7 @@ function Dict(props) {
   return (
     <div className='dictdata'>
       <h2>{props.word}</h2>
-      <h3>{props.phonetic}</h3>
+      <small>{props.phonetic}</small>
       <p>{props.def}</p>
     </div>
   )
