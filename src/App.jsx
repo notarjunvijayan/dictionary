@@ -2,6 +2,7 @@ import {useState } from "react";
 import Nav from "./components/Nav";
 import Image from "./components/image";
 import Dict from "./components/Dict";
+import Footer from "./components/Footer";
 
 import './styles/main.css'
 
@@ -12,6 +13,9 @@ function App() {
   var data = []
   const [definition, setDef] = useState('')
   const [dictphonetic,setphon]= useState('')
+  const [bool, setBool] = useState(false)
+
+
   //Search Functions
 
   var url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
@@ -24,6 +28,7 @@ function App() {
   }
   function search(text){
     setWord(val)
+    setBool(true)
     url = url + val
     getWorddata()
   }
@@ -41,8 +46,9 @@ function App() {
     </div>
     <div className="container">
       <Image id = {word} />
-      <Dict  word = {word} phonetic = {dictphonetic} def = {definition}/>
+      <Dict  bool = {bool} word = {word} phonetic = {dictphonetic} def = {definition}/>
     </div>
+    <Footer />
     </>
   );
 }

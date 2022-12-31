@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+.footer{
+    display: flex;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Incosolata', monospace;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: 600;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
