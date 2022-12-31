@@ -42,7 +42,7 @@ function App() {
     <Nav />
     <div className="input"> 
       <input type='text' placeholder="Enter Text to search" value={val} onChange={textchange}/>
-      <button onClick={search}>Click Me</button>
+      <button onClick={search}>Submit</button>
     </div>
     <div className="container">
       <Image id = {word} />

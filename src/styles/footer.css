@@ -17,3 +17,9 @@ a{
 a:hover{
     text-decoration: underline;
 }
+@media (min-width:900px) {
+    .footer{
+        font-size: 0.7rem;
+        height:10vh;
+    }
+}

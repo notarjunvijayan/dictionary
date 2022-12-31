@@ -29,12 +29,32 @@ body{
     border-bottom: 1px solid var(--secondary);
     transition : 0.5s;
 }
-.input button{
-    font-family: 'Arial';
+button {
+    font-family: 'Arial', sans-serif;
+    color: var(--secondary);
+    background: var(--primary);
+    border: 1px solid var(--secondary);
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    transition: 0.2s ease-out;
+}
+button:hover{
+    color: var(--primary);
+    background-color: var(--secondary);
+    transition: 0.2s ease-in;
 }
 .container{
     display: flex-col;
 }
+::-moz-selection { /* Code for Firefox */
+    color: var(--primary);
+    background: var(--secondary);
+  }
+  
+  ::selection {
+    color: var(--primary);
+    background: var(--secondary);
+  }
 @media (min-width:900px) {
     .container{
         display:flex;
@@ -44,5 +64,8 @@ body{
     }
     .input input{
         max-width: 30rem;
+    }
+    body{
+        overflow-y: hidden;
     }
 }
