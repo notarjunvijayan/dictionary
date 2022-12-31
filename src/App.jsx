@@ -8,7 +8,7 @@ import './styles/main.css'
 function App() {
   // Variable Declaration
   const [word, setWord] = useState('Dictionary')
-  const [val, setVal] = useState('Input')
+  const [val, setVal] = useState('')
   var data = []
   const [definition, setDef] = useState('')
   const [dictphonetic,setphon]= useState('')
@@ -35,8 +35,10 @@ function App() {
   return (
     <>
     <Nav />
-    <input type='text' value={val} onChange={textchange}/>
-    <button onClick={search}>Click Me</button>
+    <div className="input"> 
+      <input type='text' placeholder="Enter Text to search" value={val} onChange={textchange}/>
+      <button onClick={search}>Click Me</button>
+    </div>
     <div className="container">
       <Image id = {word} />
       <Dict  word = {word} phonetic = {dictphonetic} def = {definition}/>
