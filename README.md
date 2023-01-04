@@ -9,7 +9,7 @@ https://dictionary-notarjunvijayan.vercel.app/
 ## Technologies Used
 ReactJS
 
-## API
+### API
 Unsplash API , Free Dictionary API
 
 ## Screenshot
