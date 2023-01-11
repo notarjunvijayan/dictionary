@@ -7,7 +7,7 @@ A Front End Dictionary web App that provides definition and a coresponding image
 https://dictionary-notarjunvijayan.vercel.app/
 
 ## Technologies Used
-ReactJS
+ReactJS, CSS, HTML
 
 ### API
 Unsplash API , Free Dictionary API
