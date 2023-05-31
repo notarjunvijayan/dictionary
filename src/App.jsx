@@ -35,13 +35,11 @@ function App() {
     setVal(event.target.value)
   }
   
-  
   return (
     <>
     <Nav />
-    <div className="input"> 
+    <div className="input" onKeyUp={search}> 
       <input type='text' placeholder="Enter Text to search" value={val} onChange={textchange}/>
-      <button onClick={search}>Submit</button>
     </div>
     <div className="container">
       <Image id = {word} />

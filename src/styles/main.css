@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     width: 100vw;
+    height: 5vh;
 }
 .input input{
     font-family: 'Arial',sans-serif;

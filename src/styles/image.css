@@ -4,6 +4,7 @@ img{
 }
 @media (min-width:900px) {
     img{
+        margin: 5vh 5vw 5vh 15vw;
         width:30vw;
         z-index:0;
     }

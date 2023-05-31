@@ -5,8 +5,7 @@
 
 .dictdata{
     width:90vw;
-    
-    padding: 5vh 5vw 5vh 5vw;
+    padding: 5vh 3vw 5vh 3vw;
     color: var(--dark);
 }
 h2{
